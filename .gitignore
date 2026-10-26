@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# secrets and local config
+.env
+*.tfvars
+!example.tfvars
+
+# terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl.bak
+
+# database dumps
+backups/
+*.dump
+*.sql.gz
