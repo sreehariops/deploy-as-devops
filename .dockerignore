@@ -1,0 +1,14 @@
+.git
+.env
+.env.example
+.dockerignore
+LEARNING.md
+tests/
+scripts/
+README.md
+requirements-dev.txt
+compose.yml
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/

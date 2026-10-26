@@ -31,8 +31,9 @@ networks, volumes, environment variables.
   requirements installed before copying code so the layer caches).
 - Run the app container on the same user-defined network as Postgres.
 
-**Done when:** `docker image ls` shows your image under ~200 MB, the UI works at
-http://localhost:8000, and data survives `docker rm -f` of the Postgres container.
+**Done when:** `docker ps` shows the app as `(healthy)`, it runs as a non-root user,
+`docker history` shows no wasted layers, the UI works at http://localhost:8000, and
+data survives `docker rm -f` of the Postgres container.
 
 ## Phase 2 — Docker Compose: the whole stack in one file
 Learn: services, `depends_on` with `condition: service_healthy`, healthchecks,
